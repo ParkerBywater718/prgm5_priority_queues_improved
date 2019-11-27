@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class Trie {
     private TrieNode root;
@@ -139,7 +140,7 @@ public class Trie {
     }
 
     private void addTermsFromNodeDown(MaxHeap<Term> h, TrieNode tn) {
-        TrieNode[] nextChildren = tn.map.getAllChildren();
+        LinkedList<TrieNode> nextChildren = tn.map.getAllChildren();
         for (TrieNode child : nextChildren) {
             if (child.term != null)
                 h.insert(child.term);

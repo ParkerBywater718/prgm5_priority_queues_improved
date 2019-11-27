@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c2966d-e319-4c73-a28e-4d7f2b0babf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trie.java" afterDir="false" />
     </list>
@@ -111,7 +110,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Trie.java</url>
-          <line>136</line>
+          <line>137</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
