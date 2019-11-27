@@ -1,5 +1,3 @@
-import java.util.LinkedList;
-
 public class Trie {
     private TrieNode root;
 
@@ -12,7 +10,6 @@ public class Trie {
             storedChar = c;
             term = t;
             map = new HashMapASCII();
-
         }
 
         @Override
@@ -26,13 +23,11 @@ public class Trie {
         int mapCapacity = 95;
         int mapSize;
         TrieNode[] theArray;
-        LinkedList<TrieNode> children;
 
         HashMapASCII() {
             theArray = new TrieNode[mapCapacity];
             for (int i = 0; i < 26; i++)
                 theArray[i] = null;
-            children = new LinkedList<TrieNode>();
             mapSize = 0;
         }
 
@@ -44,7 +39,6 @@ public class Trie {
          */
         void insert(char c, TrieNode tn) {
             theArray[c - ASCII_MIN] = tn;
-            children.add(tn);
             mapSize++;
         }
 
@@ -56,9 +50,7 @@ public class Trie {
             return theArray[c - ASCII_MIN];
         }
 
-        LinkedList<TrieNode> getAllChildren() {
-            return this.children;
-            /*
+        TrieNode[] getAllChildren() {
             TrieNode[] out = new TrieNode[mapSize];
             int outIdx = 0;
             for (int i = 0; i < theArray.length; i++) {
@@ -66,7 +58,6 @@ public class Trie {
                     out[outIdx++] = theArray[i];
             }
             return out;
-            */
         }
     }
 
